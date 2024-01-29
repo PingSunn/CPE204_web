@@ -7,12 +7,82 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
+<style>
+    body {
+        text-align: center;
+    }
+    
+    .header {
+        background-color: aqua;
+        height: 50px;
+        /* line-height: 50px; */
+        padding: 15px 0%;
+    }
+    
+    .webBody {
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+    }
+    
+    .webBody .left-bar {
+        background-color: red;
+        width: 10%;
+        padding: 20% 0%;
+        /* line-height: 100vh */
+    }
+    
+    .webBody .main {
+        /* background-color: gray; */
+        width: 80%;
+        /* padding: 40px 10px; */
+        /* padding: 2% 0%; */
+    }
+    
+    .nav {
+        background-color: bisque;
+        height: 10%;
+        padding: 2% 0%;
+    }
+    
+    .article {
+        background-color: rgb(244, 146, 35);
+        height: 90%;
+        padding: 25% 0%;
+    }
+    
+    .webBody .right-bar {
+        background-color: blue;
+        width: 10%;
+        /* line-height: 100vh */
+        padding: 20% 0%;
+    }
+    
+    .footer {
+        background-color: aqua;
+        height: 50px;
+        /* line-height: 50px; */
+        padding: 15px 0%;
+    }
+</style>
+
 <body>
-    <nav class="bg-gray-800">
-        <div class="asd"></div>
 
+    <div class="header">
+        <h1> Hello Header !!!</h1>
 
-    </nav>
+    </div>
+    <div class="webBody">
+
+        <div class="left-bar">Sidebar</div>
+        <div class="main">
+            <div class="nav">Navigator</div>
+            <div class="article"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo corporis dolorum fugit maxime, porro deserunt totam esse quibusdam quas expedita, optio harum. Libero quis animi cum, incidunt modi porro ullam?</div>
+        </div>
+        <div class="right-bar">Sidebar</div>
+    </div>
+    <div class="footer">Goodbye Footer !!</div>
+
 
 </body>
 
