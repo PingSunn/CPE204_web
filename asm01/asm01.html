@@ -1,0 +1,30 @@
+<!-- Bulb -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+
+    <h1>Turn On/Off light bulb</h1>
+    <img src="pic_bulboff.gif" alt="light" id="lightImg">
+
+    <button id="on" type="button">Turn On</button>
+    <button id="off" type="button">Turn Off</button>
+    <script>
+        document.getElementById('on').addEventListener('click', function() {
+            document.getElementById('lightImg').src = "pic_bulbon.gif";
+        })
+        document.getElementById('off').addEventListener('click', function() {
+            document.getElementById('lightImg').src = "pic_bulboff.gif";
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
