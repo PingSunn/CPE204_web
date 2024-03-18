@@ -1,0 +1,84 @@
+<!-- Slideshow container -->
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Manual Slide 135 & Caption Text_Number slide</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<style>
+    .mySlides {
+        display: none;
+    }
+    
+    .descriptionText {
+        text-align: center;
+        font-size: large;
+    }
+</style>
+
+<body>
+    <h2 class="w3-center">Manual Slide & Caption Text_Number slide</h2>
+    <div class="w3-content w3-display-container">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/img_5terre_wide.jpg" style="width:100%">
+                <div class="descriptionText">5 Terre_wide</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/img_mountains_wide.jpg" style="width:100%">
+                <div class="descriptionText">Mountains_wide</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/img_snow_wide.jpg" style="width:100%">
+                <div class="descriptionText">Snow_wide</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
