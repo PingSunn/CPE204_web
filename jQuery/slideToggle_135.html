@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            // $("h1").click(function() {
+            //     $("h1").hide();
+            // });
+            $('h1').click(function() {
+                $('img').slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: lightgrey;
+        }
+        
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click me to slide panel down or upppp</h1>
+    <img src="../asm2/img/img_snow_wide.jpg" alt="image">
+</body>
+
+</html>
